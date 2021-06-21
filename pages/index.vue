@@ -1,86 +1,102 @@
 <template>
-  <div class="container">
-    <div>
-      <h1 class="title">
-         Mahir Molai
-      </h1>
+<div class="container">
+    <section class="main">
+      <h1 class="heading"><b>Mahir Molai</b></h1>
       <br>
-      <div class="links">
-        <a
-          href="https://www.youtube.com/channel/UC2VmvzguTHSq232VFAhJGrQ"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          YouTube
-        </a>
-        <a
-          href="/about"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          About Me
-        </a>
-        <a
-          href="/projects"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          Projects
-        </a>
-        <a
-          href="https://github.com/mtgsquad"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <a class="discord" href="https://discord.com/users/763767239018938368">Discord</a>
       <br>
-      <p><i>Made by developer Mahir in 30 minutes</i></p>
+      <a class="yt" href="https://www.youtube.com/channel/UC2VmvzguTHSq232VFAhJGrQ">YouTube</a>
       <br>
-      <img src="https://i.imgur.com/GGZG46J.gif" alt="NotePad Image">
-      <br>
-    </div>
-  </div>
+      <a class="bot" href="https://bot.molai.dev">MolaiBOT</a>
+    </section>
+</div>
 </template>
 
 <script>
-export default {}
+ export default {}
 </script>
 
 <style>
-*{
-  font-family: "Source Code Pro", monospace;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.container{
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background: #000115;
+  cursor: url('./img/cursor3.svg'), auto;
+  position: relative;
 }
 
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.main{
+  height: 100vh;
+  position: relative;
 }
 
-.title {
-  display: block;
-  font-weight: bold;
-  font-size: 74px;
-  color: #35495e;
-  letter-spacing: 1px;
+.heading{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 65px;
+  transition: 0.3s ease-in;
+  text-decoration: none;
 }
 
-.subtitle {
-  font-weight: 300;
+.heading:hover{
+  color: orange;
+  text-decoration: underline;
+  cursor: url('./img/cursor4.svg'), auto;
+}
+
+.discord {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+  transition: 0.3s ease-in;
+  text-decoration: none;
 }
 
-.links {
-  padding-top: 15px;
+.discord:hover { 
+  color: orange;
+  text-decoration: underline;
+  cursor: url('./img/cursor4.svg'), auto;
+}
+
+.yt {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 42px;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+}
+
+.yt:hover { 
+  color: orange;
+  text-decoration: underline;
+  cursor: url('./img/cursor4.svg'), auto;
+}
+
+.bot {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 42px;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+}
+
+.bot:hover { 
+  color: orange;
+  text-decoration: underline;
+  cursor: url('./img/cursor4.svg'), auto;
 }
 </style>

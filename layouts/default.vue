@@ -46,19 +46,19 @@ html {
   background-color: #3b8070;
 }
 
-.button--grey {
+.button--white {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
+  border: 1px solid #f5f5f5;
+  color: #f5f5f5;
   text-decoration: none;
   padding: 10px 30px;
   margin-left: 15px;
   transition: 0.3s;
 }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.button--white:hover {
+  color: #000115;
+  background-color: #f5f5f5;
 }
 </style>
