@@ -61,4 +61,8 @@ html {
   color: #000115;
   background-color: #f5f5f5;
 }
+
+.white {
+  color: white;
+}
 </style>

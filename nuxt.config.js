@@ -15,6 +15,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/svg', href: '/default.svg' }
+    ],
+    script: [
+      { src: 'https://kit.fontawesome.com/f9cf38b42f.js', crossorigin: 'anonymous' }
     ]
   },
 
