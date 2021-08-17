@@ -25,6 +25,7 @@
   </nav>
   <main class="about">
     <img class="av small" src="../assets/av.png" alt="Avatar">
+    <h1 class="pname">Mahir Molai</h1>
     <h1 class="name">Mahir Molai</h1>
     <p class="description">A Developer With The Dream To Change The World.</p>
   </main>
@@ -194,5 +195,42 @@ main {
   left: 45%;
   transform: translate(-50%, -50%);
   font-size: 23px;
+}
+
+.pname {
+  position: absolute;
+  display: none;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 10px;
+  }
+
+  .name {
+    display: none;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .av {
+    width: 35%;
+    height: auto;
+    left: 50%;
+    top: 45%;
+  }
+
+  .pname {
+    display: block;
+    top: 80%;
+    left: 50.5%;
+    font-size: 34px;
+  }
 }
 </style>
