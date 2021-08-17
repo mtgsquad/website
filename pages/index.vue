@@ -36,7 +36,7 @@
           <div class="col">
             <div
               class="card card-info"
-              v-on:click="redirect('https://bot.molai.dev')"
+              v-on:click="redirect('/projects/molaibot')"
             >
               <p class="card-title">MolaiBOT</p>
               <div class="card-data">
@@ -50,7 +50,7 @@
           <div class="col">
             <div
               class="card card-info"
-              v-on:click="redirect('https://freedomapp.cc')"
+              v-on:click="redirect('/projects/freedom')"
             >
               <p class="card-title">Freedom</p>
               <div class="card-data">
@@ -64,7 +64,7 @@
           <div class="col">
             <div
               class="card card-info"
-              v-on:click="redirect('https://github.com/mtgsquad/gitterish')"
+              v-on:click="redirect('/projects/gitterish')"
             >
               <p class="card-title">Gitterish</p>
               <div class="card-data">
@@ -78,7 +78,7 @@
           <div class="col">
             <div
               class="card card-info"
-              v-on:click="redirect('https://podcasts.molai.dev')"
+              v-on:click="redirect('/projects/podcasts')"
             >
               <p class="card-title">Molai's Podcasts</p>
               <div class="card-data">
@@ -92,7 +92,7 @@
           <div class="col">
             <div
               class="card card-info"
-              v-on:click="redirect('https://npmjs.com/package/djspg')"
+              v-on:click="redirect('/projects/djspg')"
             >
               <p class="card-title">djspg</p>
               <div class="card-data">
@@ -106,7 +106,7 @@
           <div class="col">
             <div
               class="card card-info"
-              v-on:click="redirect('https://quickshadow.js.org')"
+              v-on:click="redirect('/projects/quickshadow')"
             >
               <p class="card-title">quickshadow.js</p>
               <div class="card-data">
@@ -120,7 +120,7 @@
           <div class="col">
             <div
               class="card card-info"
-              v-on:click="redirect('https://npmjs.com/package/ijspg')"
+              v-on:click="redirect('/projects/ijspg')"
             >
               <p class="card-title">ijspg</p>
               <div class="card-data">
@@ -140,7 +140,16 @@
 export default {
   methods: {
     redirect: function (link) {
-      location = link;
+      if(!link === String) return console.log('Not a string...');
+
+      if(link.startsWith("/")) {
+        const redirect = window.location.hostname + link;
+
+        const r = redirect.slice(window.location.hostname.length);
+
+        location = r;
+
+      } else location = link;
     }
   }
 }
