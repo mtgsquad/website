@@ -21,6 +21,10 @@
             target="_blank"
             ><i class="fab fa-youtube"></i
           ></a>
+          <a
+            href="mailto:mahir@molai.dev"
+            target="_blank"
+            ><i class="fas fa-envelope"></i></a>
         </div>
   </nav>
   <main class="about">
