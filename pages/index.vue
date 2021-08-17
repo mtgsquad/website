@@ -146,11 +146,7 @@ export default {
 </script>
 
 <style>
-<<<<<<< HEAD
 @import url("https://cdn.molai.dev/theme.css");
-=======
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
->>>>>>> 8701db2304c234fcf08341ad5d79ff5981ae13b4
 
 .container {
   height: 100vh;
