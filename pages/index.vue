@@ -228,9 +228,10 @@ main {
 
   .pname {
     display: block;
-    top: 80%;
-    left: 50.5%;
+    top: 75.75%;
+    left: 50.9%;
     font-size: 34px;
+    white-space: nowrap;
   }
 }
 </style>
