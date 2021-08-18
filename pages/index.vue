@@ -34,7 +34,7 @@
     <p class="description">A Developer With The Dream To Change The World.</p>
   </main>
   <br>
-  <div id="projects" class="main">
+  <main id="projects" class="main">
         <h1>Projects</h1>
         <div class="row">
           <div class="col">
@@ -136,7 +136,21 @@
             </div>
           </div>
         </div>
-  </div>
+  </main>
+  <footer class="nav">
+        <div class="nav-left">
+        </div>
+        <div class="nav-middle">
+          <div class="logo">
+            <a href="/">
+              <span class="molai">molai</span
+              ><span class="function">.dev</span></a
+            >
+          </div>
+        </div>
+        <div class="nav-right">
+        </div>
+  </footer>
 </div>
 </template>
 
@@ -154,6 +168,12 @@ export default {
         location = r;
 
       } else location = link;
+    },
+    r: function (link) {
+      if(!link === String) return console.log('Dumbass thats not a string');
+
+      const l = 'https://' + link;
+      location = l;
     }
   }
 }
@@ -175,7 +195,7 @@ span > a{
 }
 
 main {
-  height: 50%;
+  height: 55%;
 }
 
 .small {
@@ -214,6 +234,20 @@ main {
   position: absolute;
   display: none;
   transform: translate(-50%, -50%);
+}
+
+.logo {
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: 700;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.logo > a {
+  outline: 0;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 600px) {
