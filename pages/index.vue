@@ -137,20 +137,6 @@
           </div>
         </div>
   </main>
-  <footer class="nav">
-        <div class="nav-left">
-        </div>
-        <div class="nav-middle">
-          <div class="logo">
-            <a href="/">
-              <span class="molai">molai</span
-              ><span class="function">.dev</span></a
-            >
-          </div>
-        </div>
-        <div class="nav-right">
-        </div>
-  </footer>
 </div>
 </template>
 
@@ -234,20 +220,6 @@ main {
   position: absolute;
   display: none;
   transform: translate(-50%, -50%);
-}
-
-.logo {
-  cursor: pointer;
-  font-size: 26px;
-  font-weight: 700;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.logo > a {
-  outline: 0;
-  text-decoration: none;
 }
 
 @media only screen and (max-width: 600px) {
