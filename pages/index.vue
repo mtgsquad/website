@@ -141,6 +141,17 @@
 </template>
 
 <script>
+document.querySelectorAll('a[href^="#projects"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
 export default {
   methods: {
     redirect: function (link) {
