@@ -33,6 +33,22 @@
         </p>
         <img :src="img" :alt="name">
       </div>
+      <div class="row">
+        <div class="col">
+            <div
+              class="card card-info"
+              v-on:click="redirect('/')"
+            >
+              <p class="card-title">Go back home</p>
+              <div class="card-data">
+                <div class="difficulty card-sub">
+                  <i class="fas fa-arrow-left"></i>
+                  <p class="data"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
     </div>
 </template>
 
