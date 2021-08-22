@@ -59,7 +59,21 @@ const Component = {
     "description",
     "link",
     "img"
-  ]
+  ],
+  methods: {
+    redirect: function (link) {
+      if(!link === String) return console.log('Not a string...');
+
+      if(link.startsWith("/")) {
+        const redirect = window.location.hostname + link;
+
+        const r = redirect.slice(window.location.hostname.length);
+
+        location = r;
+
+      } else location = link;
+    }
+  }
 }
 
 export default Component;
