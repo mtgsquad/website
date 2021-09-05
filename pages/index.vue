@@ -110,6 +110,20 @@
           <div class="col">
             <div
               class="card card-info"
+              v-on:click="redirect('/projects/ballthatfalls')"
+            >
+              <p class="card-title">BallThatFalls</p>
+              <div class="card-data">
+                <div class="difficulty card-sub">
+                  <i class="fas fa-bolt"></i>
+                  <p class="data">JavaScript</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card card-info"
               v-on:click="redirect('/projects/quickshadow')"
             >
               <p class="card-title">quickshadow.js</p>
