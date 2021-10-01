@@ -17,7 +17,8 @@ export default {
       { rel: 'icon', type: 'image/svg', href: '/default.svg' }
     ],
     script: [
-      { src: 'https://kit.fontawesome.com/f9cf38b42f.js', crossorigin: 'anonymous' }
+      { src: 'https://kit.fontawesome.com/f9cf38b42f.js', crossorigin: 'anonymous' },
+      { src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js', 'data-ad-client': 'ca-pub-2703289420312218', async}
     ]
   },
 
