@@ -10,7 +10,7 @@
           </div>
         </div>
         <div class="nav-middle">
-          <span data-toggle="modal"><a href="#projects">Projects</a></span>
+          <span data-toggle="modal"><a href="#projects">Projects</a> | </span>
           <span data-toggle="modal"><a href="https://blog.molai.dev">Blog</a></span>
         </div>
         <div class="nav-right">
