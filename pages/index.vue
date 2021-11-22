@@ -29,9 +29,13 @@
   </nav>
   <main class="about">
     <img class="av small" src="../assets/av.png" alt="Avatar">
+    <svg class="withLogo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <path fill="#33354B" d="M57.6,-14.1C64,1.1,51.3,27.1,33.2,38.6C15.1,50.1,-8.4,47,-29.2,33.4C-50.1,19.9,-68.3,-4.1,-63,-17.8C-57.7,-31.5,-28.8,-34.9,-1.6,-34.3C25.6,-33.8,51.1,-29.4,57.6,-14.1Z" transform="translate(100 100)" />
+</svg>
     <h1 class="pname">Mahir Molai</h1>
     <h1 class="name">Mahir Molai</h1>
-    <p class="description">A Developer With The Dream To Change The World.</p>
+    <p class="description">A Developer With The Dream To <br>       Change The World.</p>
+    
   </main>
   <br>
   <main id="projects" class="main">
@@ -226,19 +230,28 @@ main {
   transform: translate(-50%, -50%);
 }
 
+.withLogo {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
 .name {
   position: absolute;
-  top: 43%;
-  left: 29%;
+  top: 35%;
+  left: 33%;
   transform: translate(-50%, -50%);
+  color: #f84364;
 }
 
 .description {
   position: absolute;
-  top: 57%;
-  left: 45%;
+  top: 50%;
+  left: 40.5%;
   transform: translate(-50%, -50%);
   font-size: 23px;
+  color: #12e1e4;
 }
 
 .pname {
