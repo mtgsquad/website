@@ -239,7 +239,7 @@ main {
 
 .name {
   position: absolute;
-  top: 35%;
+  top: 36.25%;
   left: 33%;
   transform: translate(-50%, -50%);
   color: #f84364;
@@ -247,7 +247,7 @@ main {
 
 .description {
   position: absolute;
-  top: 50%;
+  top: 51.25%;
   left: 40.5%;
   transform: translate(-50%, -50%);
   font-size: 23px;
@@ -289,6 +289,10 @@ main {
     left: 50.9%;
     font-size: 34px;
     white-space: nowrap;
+  }
+
+  .withLogo {
+    display: none;
   }
 }
 </style>
