@@ -28,6 +28,34 @@
         ></a>
       </div>
     </nav>
+    <div @click="redirect('https://irusa.org/middle-east/palestine/')" style="
+          padding: 10px;
+          background-color: #ce1126;
+          border-radius: 4px;
+          margin: 20px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <span @click="redirect('https://irusa.org/middle-east/palestine/')">🇵🇸 Support Palestine by donating</span>
+
+        
+      </div>
+      <div @click="redirect('https://www.unfpa.org/donate/Ukraine-a?utm_campaign=HO-UA-22-Ukraine&utm_content=evergreen&gclid=Cj0KCQjwjN-SBhCkARIsACsrBz65paHPw1RQMRIKQc-qNSzG2ZIW1mhtzD6oLuaCXRMmSsB4BAtk_pIaAr0iEALw_wcB')" style="
+          padding: 10px;
+          background-color: #005bbb;
+          border-radius: 4px;
+          margin: 20px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <span @click="redirect('https://www.unfpa.org/donate/Ukraine-a?utm_campaign=HO-UA-22-Ukraine&utm_content=evergreen&gclid=Cj0KCQjwjN-SBhCkARIsACsrBz65paHPw1RQMRIKQc-qNSzG2ZIW1mhtzD6oLuaCXRMmSsB4BAtk_pIaAr0iEALw_wcB')">🇺🇦 Support Ukraine by donating</span>
+
+        
+      </div>
 
     <main class="about">
       <img class="av small" src="../assets/av.png" alt="Avatar" />
