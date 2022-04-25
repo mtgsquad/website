@@ -38,7 +38,7 @@
           align-items: center;
         "
       >
-        <span @click="redirect('https://irusa.org/middle-east/palestine/')">🇵🇸 Support Palestine by donating</span>
+        <span @click="redirect('https://irusa.org/middle-east/palestine/')">🇵🇸 Support Palestine</span>
 
         
       </div>
@@ -52,7 +52,7 @@
           align-items: center;
         "
       >
-        <span @click="redirect('https://www.unfpa.org/donate/Ukraine-a?utm_campaign=HO-UA-22-Ukraine&utm_content=evergreen&gclid=Cj0KCQjwjN-SBhCkARIsACsrBz65paHPw1RQMRIKQc-qNSzG2ZIW1mhtzD6oLuaCXRMmSsB4BAtk_pIaAr0iEALw_wcB')">🇺🇦 Support Ukraine by donating</span>
+        <span @click="redirect('https://www.unfpa.org/donate/Ukraine-a?utm_campaign=HO-UA-22-Ukraine&utm_content=evergreen&gclid=Cj0KCQjwjN-SBhCkARIsACsrBz65paHPw1RQMRIKQc-qNSzG2ZIW1mhtzD6oLuaCXRMmSsB4BAtk_pIaAr0iEALw_wcB')">🇺🇦 Support Ukraine</span>
 
         
       </div>
