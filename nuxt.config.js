@@ -29,6 +29,10 @@ export default {
         src: 'https://arc.io/widget.min.js#AVk8xxJz',
         async: true,
       },
+      {
+        src: 'https://cdn.splitbee.io/sb.js',
+        async: true,
+      },
     ],
   },
 
