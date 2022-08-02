@@ -43,7 +43,7 @@
         scroll-behavior: smooth;
         font-family: 'Roboto Mono', monospace;
         background: fixed;
-        background-image: url('./images/bg2.png');
+        background-image: url('https://cdn.molai.dev/bg2.png');
     }
 
     nav {
