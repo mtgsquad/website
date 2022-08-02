@@ -5,7 +5,7 @@
 
 <main id="top">
     <nav>
-        <h1 on:click={()=>window.location.href = "#top"}>molai.dev</h1>
+        <h1 on:click={()=>window.location.href = "#top"}><b>molai</b>.dev</h1>
         <div class="links">
             <button on:click={()=>window.location.href = "mailto:mahir@molai.dev"}>Email</button>
         </div>
@@ -42,6 +42,8 @@
         width: 100vw;
         scroll-behavior: smooth;
         font-family: 'Roboto Mono', monospace;
+        background: fixed;
+        background-image: url('./images/bg2.png');
     }
 
     nav {
@@ -51,13 +53,17 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding-left: 70px;
+        padding-left: 20px;
         padding-right: 70px;
 
         h1 {
             color: $text-colour;
             font-size: 36px;
             cursor: pointer;
+
+            b {
+                color: black;
+            }
         }
 
         .links {
