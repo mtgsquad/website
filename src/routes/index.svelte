@@ -36,7 +36,9 @@
         </div>
     </nav>
     <div bind:this={header} class="header">
+        <p class="design">Designer</p>
         Mahir Molai
+        <p class="frontend">Front-end Dev</p>
     </div>
     <div class="player">
         <p class="credits">Music Credits:
@@ -160,13 +162,26 @@
     .header {
         color: $text-colour;
         font-size: 100px;
-        position: relative;
         height: calc(100vh - 130px);
         width: 100vw;
         display: flex;
-        align-items: cneter;
+        align-items: center;
+        flex-direction: column;
         justify-content: center;
         text-align: center;
         text-shadow: 1px 1px 0 $shadow;
+        gap: 50px;
+
+        .frontend {
+            font-size: 42px;
+            align-self: flex-start;
+            margin-left: 230px;
+        }
+
+        .design {
+            font-size: 42px;
+            align-self: flex-end;
+            margin-right: 330px;
+        }
     }
 </style>
