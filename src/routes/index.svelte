@@ -1,6 +1,31 @@
 <script context="module">
     export let prerender = true;
+</script>
 
+<script>
+    import { onMount } from 'svelte';
+
+    /**
+    * @type {HTMLDivElement}
+    */
+    let header;
+     /**
+    * @type {HTMLAudioElement}
+    */
+    let musicPlayer;
+
+
+    onMount(()=> {
+        let shadow = "";
+
+        for(var i = 0; i < 1000; i++) {
+            shadow +=(shadow? ",":"")+ i*1+"px "+ i*1+'px 0 #eece1b'
+        }
+
+        header.style.textShadow = shadow;
+
+        musicPlayer.play();
+    })
 </script>
 
 <main id="top">
@@ -10,9 +35,17 @@
             <button on:click={()=>window.location.href = "mailto:mahir@molai.dev"}>Email</button>
         </div>
     </nav>
-    <header>
-        <h1 class="name">Mahir Molai</h1>
-    </header>
+    <div bind:this={header} class="header">
+        Mahir Molai
+    </div>
+    <div class="player">
+        <p class="credits">Music Credits:
+            <br>
+            <a href="https://www.youtube.com/watch?v=mMYfOB_rzac" target="_blank">Keshi - Beside You</a>
+       </p>
+       <audio bind:this={musicPlayer} class="gap-bottom-left" controls src="./music/bgsong.mp3">
+       </audio>
+    </div>
     <!--<section id="contact" class="contact">
         <form action="/api/form">
             <input type="text">
@@ -25,6 +58,7 @@
     $text-colour: #b8a01b;
     $btn-text-colour: #FFDF33;
     $bg: #FFDF33;
+    $shadow: #eece1b;
     $btn: #b8a01b;
 
     @keyframes typing {
@@ -35,6 +69,22 @@
         from { border-color: transparent }
         to { border-color: orange; }
     }
+
+    .player {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        width: 300px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .credits {
+        max-width: 250px;
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
     main {
         display: flex;
         flex-direction: column;
@@ -42,8 +92,11 @@
         width: 100vw;
         scroll-behavior: smooth;
         font-family: 'Roboto Mono', monospace;
-        background: fixed;
+        /**
+            background: fixed;
         background-image: url('https://cdn.molai.dev/bg2.png');
+        */
+        background: $bg;
     }
 
     nav {
@@ -53,7 +106,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding-left: 20px;
+        padding-left: 70px;
         padding-right: 70px;
 
         h1 {
@@ -61,9 +114,11 @@
             font-size: 36px;
             cursor: pointer;
 
-            b {
+            /**
+                b {
                 color: black;
             }
+            */
         }
 
         .links {
@@ -89,38 +144,29 @@
                 border-radius: 10px;
                 box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
                 transition: 600ms ease-in-out;
-                box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
-                -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
-                -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
+                box-shadow: 10px 10px 0px 0px $shadow;
+                -webkit-box-shadow: 10px 10px 0px 0px $shadow;
+                -moz-box-shadow: 10px 10px 0px 0px $shadow;
 
                 &:hover {
-                    box-shadow: 25px 25px 0px 0px rgba(0,0,0,0.75);
-                    -webkit-box-shadow: 25px 25px 0px 0px rgba(0,0,0,0.75);
-                    -moz-box-shadow: 25px 25px 0px 0px rgba(0,0,0,0.75);
+                    box-shadow: 25px 25px 0px 0px $shadow;
+                    -webkit-box-shadow: 25px 25px 0px 0px $shadow;
+                    -moz-box-shadow: 25px 25px 0px 0px $shadow;
                 }
             }
         }
     }
 
-    header {
-        margin-bottom: 125px;
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        align-items: center;
-        justify-content: center;
+    .header {
+        color: $text-colour;
+        font-size: 100px;
+        position: relative;
         height: calc(100vh - 130px);
         width: 100vw;
-
-        h1{
-            font-weight: 600;
-            font-size: 76px;
-            color: $text-colour;
-            width: 0;
-            overflow: hidden;
-            border-right: .15em solid orange;
-            white-space: nowrap;
-            animation: typing 1.5s steps(20, end) forwards, blink .8s infinite;
-        }
+        display: flex;
+        align-items: cneter;
+        justify-content: center;
+        text-align: center;
+        text-shadow: 1px 1px 0 $shadow;
     }
 </style>
