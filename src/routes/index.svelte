@@ -191,7 +191,7 @@
         .design {
             font-size: 42px;
             align-self: flex-end;
-            margin-right: 330px;
+            margin-right: 370px;
         }
     }
 
