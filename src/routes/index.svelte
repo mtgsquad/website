@@ -14,6 +14,10 @@
     */
     let musicPlayer;
 
+    /**
+    * @type {HTMLElement}
+    */
+    let credits;
 
     onMount(()=> {
         let shadow = "";
@@ -21,6 +25,8 @@
         for(var i = 0; i < 1000; i++) {
             shadow +=(shadow? ",":"")+ i*1+"px "+ i*1+'px 0 #eece1b'
         }
+
+        credits.style.textShadow = shadow;
 
         header.style.textShadow = shadow;
 
@@ -38,10 +44,10 @@
     <div bind:this={header} class="header">
         <p class="design">Designer</p>
         Mahir Molai
-        <p class="frontend">Front-end Dev</p>
+        <p class="frontend">Front-End Dev</p>
     </div>
     <div class="player">
-        <p class="credits">Music Credits:
+        <p bind:this={credits} class="credits">Music Credits:
             <br>
             <a href="https://www.youtube.com/watch?v=mMYfOB_rzac" target="_blank">Keshi - Beside You</a>
        </p>
@@ -70,16 +76,6 @@
     @keyframes blink {
         from { border-color: transparent }
         to { border-color: orange; }
-    }
-
-    .player {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        width: 300px;
-        margin-left: 20px;
-        margin-bottom: 20px;
     }
     .credits {
         max-width: 250px;
@@ -110,6 +106,7 @@
         justify-content: space-between;
         padding-left: 70px;
         padding-right: 70px;
+        position: fixed;
 
         h1 {
             color: $text-colour;
@@ -162,8 +159,8 @@
     .header {
         color: $text-colour;
         font-size: 100px;
-        height: calc(100vh - 130px);
         width: 100vw;
+        height: calc(100vh - 130px);
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -182,6 +179,25 @@
             font-size: 42px;
             align-self: flex-end;
             margin-right: 330px;
+        }
+    }
+
+    .player {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        width: 300px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        align-self: flex-start;
+        justify-self: flex-end;
+        text-shadow: 1px 1px 0 $shadow;
+        color: $text-colour;
+
+        a {
+            color: blue;
+            text-decoration: none;
         }
     }
 </style>
