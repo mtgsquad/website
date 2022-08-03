@@ -23,8 +23,6 @@
             shadow +=(shadow? ",":"")+ i*1+"px "+ i*1+'px 0 #eece1b'
         }
 
-        credits.style.textShadow = shadow;
-
         header.style.textShadow = shadow;
 
         // musicPlayer.play();
