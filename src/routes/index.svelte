@@ -43,16 +43,17 @@
         Mahir Molai
         <p class="frontend">Front-End Dev</p>
     </div>
-    <div class="player">
+    <!--
+        <div class="player">
         <p bind:this={credits} class="credits">Music Credits:
             <br>
             <a href="https://www.youtube.com/watch?v=mMYfOB_rzac" target="_blank">Keshi - Beside You</a>
        </p>
-       <!--
+       
         <audio bind:this={musicPlayer} class="gap-bottom-left" controls src="./music/bgsong.mp3">
        </audio>
-       -->
     </div>
+    -->
     <div class="ad">
         <amp-ad
             layout="fixed"
