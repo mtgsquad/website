@@ -9,10 +9,7 @@
     * @type {HTMLDivElement}
     */
     let header;
-     /**
-    * @type {HTMLAudioElement}
-    */
-    let musicPlayer;
+    
 
     /**
     * @type {HTMLElement}
@@ -30,7 +27,7 @@
 
         header.style.textShadow = shadow;
 
-        musicPlayer.play();
+        // musicPlayer.play();
     })
 </script>
 
@@ -51,8 +48,10 @@
             <br>
             <a href="https://www.youtube.com/watch?v=mMYfOB_rzac" target="_blank">Keshi - Beside You</a>
        </p>
-       <audio bind:this={musicPlayer} class="gap-bottom-left" controls src="./music/bgsong.mp3">
+       <!--
+        <audio bind:this={musicPlayer} class="gap-bottom-left" controls src="./music/bgsong.mp3">
        </audio>
+       -->
     </div>
     <div class="ad">
         <amp-ad
@@ -211,7 +210,8 @@
         }
     }
 
-    .player {
+    /**
+            .player {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -229,6 +229,7 @@
             text-decoration: none;
         }
     }
+    */
 
     .ad {
         background: $bg-ad;
