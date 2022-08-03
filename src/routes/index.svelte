@@ -123,26 +123,25 @@
             font-size: 24px;
             align-items: center;
             justify-content: center;
-            background: $btn;
             width: 150px;
             height: 55px;
             cursor: pointer;
-            color: $btn-text-colour;
             font-family: 'Roboto Mono', monospace;
-            border: none;
             border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             transition: 450ms ease-in-out;
-            box-shadow: 10px 10px 0px 0px $shadow;
-            -webkit-box-shadow: 10px 10px 0px 0px $shadow;
-            -moz-box-shadow: 10px 10px 0px 0px $shadow;
-            &:hover {
-                box-shadow: 10px 10px 0px 0px $btn;
+            box-shadow: 10px 10px 0px 0px $btn;
                 -webkit-box-shadow: 10px 10px 0px 0px $btn;
                 -moz-box-shadow: 10px 10px 0px 0px $btn;
                 background: $btn-text-colour;
                 color: $btn;
                 border: 2px solid $btn;
+            &:hover {
+                box-shadow: 10px 10px 0px 0px $shadow;
+                -webkit-box-shadow: 10px 10px 0px 0px $shadow;
+                -moz-box-shadow: 10px 10px 0px 0px $shadow;
+                background: $btn;
+                color: $btn-text-colour;
+                border: none;
             }
         }
 
