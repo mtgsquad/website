@@ -55,16 +55,14 @@
        </audio>
     </div>
     <div class="ad">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2703289420312218"
-     crossorigin="anonymous"></script>
-        <!-- ad 1 -->
-     <ins class="adsbygoogle"
-     style="display:inline-block;width:120px;height:120px"
-     data-ad-client="ca-pub-2703289420312218"
-     data-ad-slot="6837791691"></ins>
-    <script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+        <amp-ad
+            layout="fixed"
+            width="120"
+            height="120"
+            type="adsense"
+            data-ad-client="ca-pub-2703289420312218"
+            data-ad-slot="6837791691">
+        </amp-ad>
     </div>
     <!--<section id="contact" class="contact">
         <form action="/api/form">
