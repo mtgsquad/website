@@ -36,7 +36,7 @@
 
 <main id="top">
     <nav>
-        <h1 on:click={()=>window.location.href = "#top"}><b>molai</b>.dev</h1>
+        <button class="btn" on:click={()=>window.location.href = "#top"}>molai.dev</button>
         <div class="links">
             <button on:click={()=>window.location.href = "mailto:mahir@molai.dev"}>Email</button>
         </div>
@@ -108,16 +108,29 @@
         padding-right: 70px;
         position: fixed;
 
-        h1 {
-            color: $text-colour;
-            font-size: 36px;
+        .btn {
+            display: flex;
+            font-size: 24px;
+            align-items: center;
+            justify-content: center;
+            background: $btn;
+            width: 150px;
+            height: 55px;
             cursor: pointer;
-
-            /**
-                b {
-                color: black;
+            color: $btn-text-colour;
+            font-family: 'Roboto Mono', monospace;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: 600ms ease-in-out;
+            box-shadow: 10px 10px 0px 0px $shadow;
+            -webkit-box-shadow: 10px 10px 0px 0px $shadow;
+            -moz-box-shadow: 10px 10px 0px 0px $shadow;
+            &:hover {
+                box-shadow: 25px 25px 0px 0px $shadow;
+                -webkit-box-shadow: 25px 25px 0px 0px $shadow;
+                -moz-box-shadow: 25px 25px 0px 0px $shadow;
             }
-            */
         }
 
         .links {
