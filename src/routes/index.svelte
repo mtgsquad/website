@@ -54,6 +54,18 @@
        <audio bind:this={musicPlayer} class="gap-bottom-left" controls src="./music/bgsong.mp3">
        </audio>
     </div>
+    <div class="ad">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2703289420312218"
+     crossorigin="anonymous"></script>
+        <!-- ad 1 -->
+     <ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:120px"
+     data-ad-client="ca-pub-2703289420312218"
+     data-ad-slot="6837791691"></ins>
+    <script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </div>
     <!--<section id="contact" class="contact">
         <form action="/api/form">
             <input type="text">
@@ -66,6 +78,7 @@
     $text-colour: #b8a01b;
     $btn-text-colour: #FFDF33;
     $bg: #FFDF33;
+    $bg-ad: rgba(184, 161, 27, 0.807);
     $shadow: #eece1b;
     $btn: #b8a01b;
 
@@ -212,5 +225,14 @@
             color: blue;
             text-decoration: none;
         }
+    }
+
+    .ad {
+        background: $bg-ad;
+        width: 150px;
+        height: 150px;
+        align-self: flex-end;
+        justify-self: flex-end;
+        border-radius: 15px 0px 0px 0px;
     }
 </style>
