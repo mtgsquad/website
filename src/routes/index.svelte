@@ -34,6 +34,7 @@
         <button class="btn" on:click={()=>window.location.href = "#top"}>molai.dev</button>
         <div class="links">
             <button on:click={()=>window.location.href = "mailto:mahir@molai.dev"}>Email</button>
+            <button on:click={()=>window.location.href = "https://github.com/mtgsquad"}>GitHub</button>
         </div>
     </nav>
     <div bind:this={header} class="header">
