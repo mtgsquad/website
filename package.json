@@ -26,6 +26,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"carbon-icons-svelte": "^11.3.0",
 		"node-sass": "^7.0.1"
 	}
 }
