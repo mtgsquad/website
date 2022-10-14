@@ -67,7 +67,7 @@
 </main>
 
 <style lang="scss">
-    @import url('hhttps://fonts.googleapis.com/css?family=Source+Code+Pro%3A400%2C700%2C900&subset=latin%2Clatin-ext');
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700;900&display=swap');
     $text-colour: #b8a01b;
     $btn-text-colour: #FFDF33;
     $bg: #FFDF33;
@@ -94,7 +94,7 @@
         height: auto;
         width: 100vw;
         scroll-behavior: smooth;
-        font-family: 'Roboto Mono', monospace;
+        font-family: 'Source Code Pro', monospace;
         /**
             background: fixed;
         background-image: url('https://cdn.molai.dev/bg2.png');
@@ -122,7 +122,7 @@
             width: 150px;
             height: 55px;
             cursor: pointer;
-            font-family: 'Roboto Mono', monospace;
+            font-family: 'Source Code Pro', monospace;
             border-radius: 10px;
             transition: 450ms ease-in-out;
             box-shadow: 10px 10px 0px 0px $btn;
@@ -159,7 +159,7 @@
                 height: 55px;
                 cursor: pointer;
                 color: $btn-text-colour;
-                font-family: 'Roboto Mono', monospace;
+                font-family: 'Source Code Pro', monospace;
                 border: none;
                 border-radius: 10px;
                 box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -274,7 +274,7 @@
             height: 60px;
             cursor: pointer;
             color: $btn-text-colour;
-            font-family: 'Roboto Mono', monospace;
+            font-family: 'Source Code Pro', monospace;
             border: none;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
