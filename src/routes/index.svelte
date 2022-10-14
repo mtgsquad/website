@@ -67,7 +67,7 @@
 </main>
 
 <style lang="scss">
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap');
+    @import url('hhttps://fonts.googleapis.com/css?family=Source+Code+Pro%3A400%2C700%2C900&subset=latin%2Clatin-ext');
     $text-colour: #b8a01b;
     $btn-text-colour: #FFDF33;
     $bg: #FFDF33;
